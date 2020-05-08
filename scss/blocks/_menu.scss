@@ -32,6 +32,7 @@
     text-transform: uppercase;
     color: #191919;
     width: 100px;
+    padding-bottom: 50px;
   }
 
   &__col_2 {
@@ -40,9 +41,7 @@
 
   &__nav {
     transform: rotate(-90deg);
-    position: absolute;
-    left: -45px;
-    top: 175px;
+    margin-top: 120px;
   }
 
   &__item {
@@ -55,15 +54,13 @@
 
   &__contact {
     transform: rotate(-90deg);
-    position: absolute;
-    left: -120px;
-    bottom: 250px;
+    margin-top: 600px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    margin: 146px auto 496px;
+    margin: 146px auto 400px;
     text-align: center;
   }
 
