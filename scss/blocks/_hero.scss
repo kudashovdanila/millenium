@@ -31,6 +31,7 @@
     transform: rotate(-90deg) translateX(300px) translateY(-275px);
     color: #454545;
     text-transform: uppercase;
+    font-style: italic;
   }
 
   &__title {
@@ -71,6 +72,7 @@
 .logo {
   display: flex;
   align-items: center;
+  z-index: 10;
 
   &__img {}
 
@@ -89,7 +91,7 @@
     font-style: italic;
     font-size: 14px;
     letter-spacing: 0.7px;
-    margin-left: 10px;
+    margin-left: 15px;
     max-width: 110px;
   }
 }

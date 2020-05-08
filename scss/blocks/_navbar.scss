@@ -10,7 +10,7 @@
     max-width: 35px;
   }
 
-  &__menu {
+  &__menu-burger {
     margin-bottom: 20px;
   }
 
@@ -29,6 +29,7 @@
     height: 40px;
     background-color: #434343;
     margin-bottom: 20px;
+    z-index: 10;
   }
 
   &__menu-sign {
@@ -41,12 +42,51 @@
   }
 }
 
-.navbar-menu {
+.menu-burger {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 23px;
+  cursor: pointer;
+  z-index: 10;
 
   &__line {
     display: block;
-    width: 35px;
-    height: 23px;
+    height: 3px;
     background-color: #ffffff;
+    transition: all .2s;
+    position: absolute;
+
+    &_1 {
+      width: 35px;
+      top: 0;
+    }
+
+    &_2 {
+      width: 35px;
+      top: 10px;
+    }
+
+    &_3 {
+      width: 25px;
+      bottom: 0;
+    }
+  }
+
+  &_active {
+    .menu-burger__line_1 {
+      transform: rotate(45deg);
+      top: 10px;
+    }
+
+    .menu-burger__line_2 {
+      transform: scale(0);
+    }
+
+    .menu-burger__line_3 {
+      transform: rotate(-45deg);
+      width: 35px;
+      bottom: 10px;
+    }
   }
 }
