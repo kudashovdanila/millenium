@@ -1,8 +1,14 @@
+@mixin os-exlight {
+  font-weight: 200;
+}
 
+@mixin os-light {
+  font-weight: 300;
+}
 
-// @mixin name {
-//   font-family: название шрифта, sans-serif;
-// }
+@mixin os-bold {
+  font-weight: 700;
+}
 
 // @mixin name {
 //   font-family: название шрифта, sans-serif;
