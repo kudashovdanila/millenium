@@ -1,6 +1,12 @@
 .header {
   display: flex;
   min-height: 100vh;
-  background: url(../img/header/bg.jpg) no-repeat center;
-  background-size: 100%;
+  position: relative;
+  background: url(../img/header/bg.jpg) no-repeat center / cover;
+}
+
+.mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 55px;
 }

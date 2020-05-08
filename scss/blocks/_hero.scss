@@ -1,0 +1,126 @@
+.hero {
+  padding-top: 20px;
+  max-width: 1397px;
+
+  &__content {
+    border-left: 1px solid #2a2a2a;
+    padding-bottom: 200px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    width: 85vw;
+  }
+
+  &__contacts {
+    text-align: right;
+  }
+
+  &__main {
+    margin-top: 560px;
+    padding-left: 95px;
+  }
+
+  &__company {
+    display: inline-block;
+    font-size: 45px;
+    @include os-bold;
+    transform: rotate(-90deg) translateX(300px) translateY(-275px);
+    color: #454545;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: -1.75px;
+    @include os-bold;
+  }
+
+  &__subtitle {
+    color: #ffffff;
+    @include os-exlight;
+    font-size: 74px;
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    @include os-exlight;
+    font-style: italic;
+    font-size: 30px;
+  }
+
+  &__text-link {
+    border-bottom: 1px solid #454545;
+  }
+
+  &__img-link {
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__img {}
+
+  &__name {
+    color: #ffffff;
+    font-size: 24px;
+    @include os-bold;
+    line-height: 1;
+    margin-left: 20px;
+    max-width: 104px;
+  }
+
+  &__desc {
+    color: #8c8c8c;
+    @include os-exlight;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    margin-left: 10px;
+    max-width: 110px;
+  }
+}
+
+.hero-contacts {
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+
+  &__img {
+    margin-right: 7px;
+  }
+
+  &__num {
+    color: #ffffff;
+    @include os-exlight;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+  }
+
+  &__form-link {
+    @include os-light;
+    color: #646464;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    border-bottom: 1px #646464 dashed;
+    max-width: 110px;
+    margin-left: auto;
+  }
+}
