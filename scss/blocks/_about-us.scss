@@ -1,0 +1,193 @@
+.about-us {
+  display: flex;
+  position: relative;
+
+  &__col-1 {
+    flex-basis: 50%;
+    padding: 180px 0 192px 100px;
+    background: url(../img/about-us/bg.jpg) no-repeat center / cover;
+  }
+
+  &__title {
+    color: #ffffff;
+    @include os-exlight;
+    font-size: 74px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    color: #909090;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    @include av-light;
+    margin-bottom: 43px;
+    max-width: 600px;
+  }
+
+  &__contacts {
+    display: flex;
+  }
+
+  &__telegram {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {}
+
+  &__line {
+    width: 70px;
+    height: 1px;
+    background-color: #303030;
+    margin: 0 19px 0 16px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact {}
+
+  &__col-2 {
+    flex-basis: 50%;
+  }
+
+  &__portfolio {
+    position: absolute;
+    color: #ffffff;
+    @include os-exlight;
+    font-style: italic;
+    font-size: 35px;
+    letter-spacing: 3.5px;
+  }
+}
+
+.about-us-telegram {
+
+  &__text {
+    margin-right: 92px;
+  }
+}
+
+.about-us-showreel {
+  background: url(../img/about-us/video-bg.jpg) no-repeat center / cover;
+  height: 50%;
+  position: relative;
+
+  &__title {
+    position: absolute;
+    color: #ffffff;
+    font-size: 45px;
+    @include os-bold;
+    font-style: italic;
+    text-transform: uppercase;
+    bottom: 31px;
+    left: 105px;
+  }
+
+  &__portfolio {
+    right: 101px;
+    bottom: 110px;
+  }
+}
+
+.about-us-3d {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50%;
+  position: relative;
+  background: url(../img/about-us/video-bg-2.jpg) no-repeat center / cover;
+
+  &__title {
+    position: absolute;
+    color: #ffffff;
+    font-size: 45px;
+    @include os-bold;
+    font-style: italic;
+    text-transform: uppercase;
+    top: 31px;
+    right: 103px;
+  }
+
+  &__portfolio {
+    top: 110px;
+    left: 100px;
+  }
+
+  &__360-img {}
+}
+
+.about-us-play {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      opacity: 20%;
+      border-radius: 50%;
+      z-index: 10;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      display: inline-block;
+      width: 140px;
+      height: 140px;
+      border: 1px solid #fff;
+      z-index: 3;
+      border-radius: 50%;
+      animation: pulse 1.8s linear infinite;
+      transform: translateY(-20px);
+    }
+  }
+
+  &__push {
+    position: absolute;
+    top: 25%;
+    margin-left: 2px;
+  }
+
+  &__text {
+    color: #ffffff;
+    @include os-light;
+    font-size: 18px;
+    max-width: 120px;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 24px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

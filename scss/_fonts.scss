@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'Avenir Next Cyr Light';
+  src: url('../fonts/AvenirNextCyr-Light.eot');
+  src: url('../fonts/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Light.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  src: url('../fonts/AvenirNextCyr-Regular.eot');
+  src: url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/AvenirNextCyr-Regular.woff') format('woff'),
+    url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @mixin os-exlight {
   font-weight: 200;
 }
@@ -10,6 +30,12 @@
   font-weight: 700;
 }
 
-// @mixin name {
-//   font-family: название шрифта, sans-serif;
-// }
+@mixin av-light {
+  font-family: 'Avenir Next Cyr Light',
+    sans-serif;
+}
+
+@mixin av-reg {
+  font-family: 'Avenir Next Cyr Regular',
+    sans-serif;
+}
