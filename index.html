@@ -12,6 +12,8 @@
 
 <body>
 
+
+
   <header class="header">
     <div class="navbar">
       <div class="navbar__content">
@@ -62,20 +64,43 @@
               <img src="img/hero/phone.svg" alt="Позвонить" class="hero-contacts__img">
               <a href="tel:+74954092520" class="hero-contacts__num">+7 (495) 409 25 20</a>
             </div>
-            <div class="hero-contacts__form-link">обратный звонок</div>
+            <a href="#" class="hero-contacts__form-link popup-link">обратный звонок</a>
           </div>
         </div>
         <div class="hero__main">
           <span class="hero__company">Millennium Pictures</span>
           <h1 class="hero__title">Реализация проектов в сфере архитектурной 3D визуализации и видео/аудио продакшн</h1>
           <h3 class="hero__subtitle">для бизнеса и творчества</h3>
-          <a href="#" class="hero__link"><span class="hero__text-link">Оставить заявку</span> <img src="img/link.svg"
-              alt="Оставить заявку" class="hero__img-link"></a>
+          <a href="#" class="hero__link popup-link"><span class="hero__text-link">Оставить заявку</span> <img
+              src="img/link.svg" alt="Оставить заявку" class="hero__img-link"></a>
         </div>
       </div>
     </div>
     <img src="img/hero/mouse.svg" alt="Прокрути мышкой" class="mouse">
   </header>
+
+  <div class="popup-wrap">
+    <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup__top">
+          <h3 class="popup__title">Оставить заявку</h3>
+          <div class="popup__line"></div>
+          <img src="img/popup/close.svg" alt="Закрыть" class="popup__close popup-close">
+        </div>
+        <div class="popup__text">заполните форму и наш продюсер свяжется с вами в ближайшее время</div>
+        <form action="#" class="popup__form">
+          <input type="text" class="popup__input" placeholder="Ваше имя" required>
+          <input type="tel" class="popup__input input-phone" placeholder="Ваш телефон" required>
+          <button class="popup__btn">Отправить</button>
+          <div class="popup__checkbox">
+            <input class="popup__check" type="checkbox" id="popup" required>
+            <label class="popup__checkbox-text" for="popup">Я согласен с <a href="#" class="popup__policy">политикой
+                конфиденциальности</a></label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <main class="main">
     <section class="about-us">
@@ -132,8 +157,8 @@
           современного рынка, в оптимальные для Вас сроки. Стоимость каждого проекта мы рассчитываем индивидуально, в
           зависимости от поставленной задачи, объема, тайминга и тд. Если Вы предпочитаете получать высокое качество и
           лучший сервис — Вам будет комфортно с нами сотрудничать.</p>
-        <a href="#" class="price__link"><span class="price__text-link">Узнать стоимость</span> <img src="img/link.svg"
-            alt="Узнать стоимость" class="price__link-img"></a>
+        <a href="#" class="price__link popup-link"><span class="price__text-link">Узнать стоимость</span> <img
+            src="img/link.svg" alt="Узнать стоимость" class="price__link-img"></a>
         <img src="img/price/decor.svg" alt="Стоимость" class="price__decor">
       </div>
     </section>
@@ -162,7 +187,7 @@
               <img src="img/hero/phone.svg" alt="Позвонить" class="hero-contacts__img">
               <a href="tel:+74954092520" class="hero-contacts__num">+7 (495) 409 25 20</a>
             </div>
-            <div class="hero-contacts__form-link">обратный звонок</div>
+            <a href="#" class="hero-contacts__form-link popup-link">обратный звонок</a>
           </div>
 
         </div>
@@ -181,6 +206,7 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

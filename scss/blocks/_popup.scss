@@ -1,0 +1,150 @@
+.popup-wrap {
+  display: none;
+  z-index: 20;
+}
+
+.popup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(#000000, 0.5);
+}
+
+.popup {
+  background: rgba(#000000, 0.8);
+  padding: 30px 50px 50px;
+  max-width: 600px;
+
+  &__close {
+    cursor: pointer;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #363636;
+  }
+
+  &__title {
+    color: #363636;
+    @include os-bold;
+    font-style: italic;
+    font-size: 46px;
+    text-transform: uppercase;
+    margin-right: 38px;
+    z-index: 10;
+  }
+
+  &__line {
+    width: 40px;
+    height: 1px;
+    background-color: #363636;
+    margin-right: 23px;
+  }
+
+  &__text {
+    color: #ffffff;
+    @include os-exlight;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin: 15px auto 17px;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__input {
+    color: #363636;
+    font-size: 24px;
+    @include os-exlight;
+    background: none;
+    letter-spacing: 1.2px;
+    border: 1px solid #363636;
+    padding: 24px 31px 25px 31px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+
+    &::placeholder {
+      color: #363636;
+    }
+  }
+
+  &__btn {
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    @include os-exlight;
+    background: none;
+    letter-spacing: 1.2px;
+    border: 1px solid #ffffff;
+    padding: 25px;
+    width: 100%;
+    transition: all .5s;
+
+    &:hover {
+      background: #000;
+    }
+  }
+
+  &__checkbox {
+    margin-top: 17px;
+  }
+
+  &__check {
+    display: none;
+    cursor: pointer;
+
+    &:checked+.popup__checkbox-text::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 2px;
+      left: 6px;
+      width: 11px;
+      height: 19px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__checkbox-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    color: #ffffff;
+    @include av-reg;
+    font-size: 16px;
+
+    &::before {
+      content: '';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 1px solid #fff;
+      padding: 8px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+
+  &__policy {
+    color: #fff;
+    margin-left: 5px;
+    text-decoration: underline;
+  }
+}
