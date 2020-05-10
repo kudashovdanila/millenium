@@ -18,10 +18,24 @@
     font-size: 30px;
     @include os-exlight;
     font-style: italic;
-    transform: rotate(-90deg) translateX(-470px) translateY(25px);
+    transform: rotate(-90deg) translateX(-440px) translateY(25px);
     width: 675px;
     letter-spacing: 1.5px;
     color: #646464;
+
+    @media (max-width: 1367px) {
+      font-size: 22px;
+      transform: rotate(-90deg) translateX(-210px) translateY(30px);
+    }
+
+    @media (max-height: 965px) {
+      font-size: 21px;
+      transform: rotate(-90deg) translateX(-250px) translateY(30px);
+    }
+
+    @media (max-height: 793px) {
+      transform: rotate(-90deg) translateX(-200px) translateY(30px);
+    }
   }
 
   &__decor-line {

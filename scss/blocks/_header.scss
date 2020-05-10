@@ -9,4 +9,8 @@
   position: absolute;
   left: 50%;
   bottom: 55px;
+
+  @media (max-width: 1367px) {
+    bottom: 30px;
+  }
 }

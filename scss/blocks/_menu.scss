@@ -9,7 +9,7 @@
   width: 100%;
   background-color: #000;
   z-index: 9;
-  min-height: 100vh;
+  height: 100vh;
   transition: all .5s;
 
   &_active {
@@ -55,6 +55,14 @@
   &__contact {
     transform: rotate(-90deg);
     margin-top: 600px;
+
+    @media (max-height: 1029px) {
+      margin-top: 400px;
+    }
+
+    @media (max-height: 834px) {
+      margin-top: 300px;
+    }
   }
 
   &__list {
@@ -62,6 +70,14 @@
     flex-direction: column;
     margin: 146px auto 400px;
     text-align: center;
+
+    @media (max-height: 1029px) {
+      margin-bottom: 200px;
+    }
+
+    @media (max-height: 834px) {
+      margin-bottom: 100px;
+    }
   }
 
   &__contacts {

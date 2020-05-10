@@ -5,6 +5,10 @@
   &__content {
     border-left: 1px solid #2a2a2a;
     padding-bottom: 200px;
+
+    @media (max-height: 900px) {
+      padding-bottom: 100px;
+    }
   }
 
   &__top {
@@ -20,18 +24,32 @@
   }
 
   &__main {
-    margin-top: 560px;
+    margin-top: 350px;
     padding-left: 95px;
+
+    @media (max-width: 1367px) {
+      margin-top: 30vh;
+      padding-left: 70px;
+    }
+
+    @media (max-height: 802px) {
+      margin-top: 250px;
+    }
   }
 
   &__company {
     display: inline-block;
     font-size: 45px;
     @include os-bold;
-    transform: rotate(-90deg) translateX(300px) translateY(-275px);
+    transform: rotate(-90deg) translateX(90px) translateY(-275px);
     color: #454545;
     text-transform: uppercase;
     font-style: italic;
+
+    @media (max-width: 1367px) {
+      font-size: 30px;
+      transform: rotate(-90deg) translateX(70px) translateY(-190px);
+    }
   }
 
   &__title {
@@ -41,6 +59,12 @@
     text-transform: uppercase;
     letter-spacing: -1.75px;
     @include os-bold;
+
+    @media (max-width: 1367px) {
+      font-size: 55px;
+      line-height: 1.2;
+      max-width: 1000px;
+    }
   }
 
   &__subtitle {
@@ -48,6 +72,10 @@
     @include os-exlight;
     font-size: 74px;
     margin-bottom: 45px;
+
+    @media (max-width: 1367px) {
+      font-size: 50px;
+    }
   }
 
   &__link {
@@ -57,6 +85,7 @@
     @include os-exlight;
     font-style: italic;
     font-size: 30px;
+    max-width: 220px;
   }
 
   &__text-link {
