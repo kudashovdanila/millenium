@@ -59,6 +59,7 @@
     text-transform: uppercase;
     letter-spacing: -1.75px;
     @include os-bold;
+    text-shadow: 0 0 4px #000;
 
     @media (max-width: 1367px) {
       font-size: 55px;
@@ -72,6 +73,7 @@
     @include os-exlight;
     font-size: 74px;
     margin-bottom: 45px;
+    text-shadow: 0 0 4px #000;
 
     @media (max-width: 1367px) {
       font-size: 50px;
