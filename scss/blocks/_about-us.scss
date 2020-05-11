@@ -26,6 +26,10 @@
     @include os-exlight;
     font-size: 74px;
     margin-bottom: 50px;
+
+    @media (max-width: 600px) {
+      font-size: 50px;
+    }
   }
 
   &__text {
@@ -116,15 +120,29 @@
     text-transform: uppercase;
     bottom: 31px;
     left: 105px;
+
+    @media (max-width: 600px) {
+      left: 24px;
+      bottom: 12px;
+    }
   }
 
   &__portfolio {
     right: 101px;
     bottom: 110px;
+
+    @media (max-width: 600px) {
+      right: 21px;
+      bottom: 60px;
+    }
   }
 
   @media (max-width: 924px) {
     height: 500px;
+  }
+
+  @media (max-width: 600px) {
+    height: 350px;
   }
 }
 
@@ -140,6 +158,10 @@
     height: 500px;
   }
 
+  @media (max-width: 600px) {
+    height: 350px;
+  }
+
   &__title {
     position: absolute;
     color: #ffffff;
@@ -149,14 +171,29 @@
     text-transform: uppercase;
     top: 31px;
     right: 103px;
+
+    @media (max-width: 600px) {
+      top: 12px;
+      right: 22px;
+    }
   }
 
   &__portfolio {
     top: 110px;
     left: 100px;
+
+    @media (max-width: 600px) {
+      top: 60px;
+      left: 21px;
+    }
   }
 
-  &__360-img {}
+  &__360-img {
+    @media (max-width: 600px) {
+      position: absolute;
+      bottom: -40px;
+    }
+  }
 }
 
 .about-us-play {
