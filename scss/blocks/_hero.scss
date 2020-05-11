@@ -232,13 +232,12 @@
 .hero-contacts {
 
   &__phone {
-    display: flex;
-    align-items: center;
     margin-bottom: 3px;
   }
 
   &__img {
     margin-right: 7px;
+    transform: translateY(3px);
 
     @media (max-width: 924px) {
       width: 24px;
@@ -270,6 +269,8 @@
   }
 
   &__form-link-top {
+    display: block;
+
     @media (max-width: 924px) {
       display: none;
     }

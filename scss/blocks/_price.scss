@@ -33,6 +33,10 @@
     @include os-exlight;
     font-size: 74px;
     margin-bottom: 50px;
+
+    @media (max-width: 600px) {
+      font-size: 50px;
+    }
   }
 
   &__text {
@@ -48,6 +52,10 @@
   &__link {
     display: flex;
     align-items: center;
+
+    @media (max-width: 600px) {
+      justify-content: center;
+    }
 
     &-img {
       margin-left: 10px;

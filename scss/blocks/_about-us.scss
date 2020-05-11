@@ -124,6 +124,7 @@
     @media (max-width: 600px) {
       left: 24px;
       bottom: 12px;
+      font-size: 30px;
     }
   }
 
@@ -134,6 +135,7 @@
     @media (max-width: 600px) {
       right: 21px;
       bottom: 60px;
+      font-size: 24px;
     }
   }
 
@@ -174,6 +176,7 @@
 
     @media (max-width: 600px) {
       top: 12px;
+      font-size: 30px;
       right: 22px;
     }
   }
@@ -185,13 +188,15 @@
     @media (max-width: 600px) {
       top: 60px;
       left: 21px;
+      font-size: 24px;
     }
   }
 
   &__360-img {
     @media (max-width: 600px) {
       position: absolute;
-      bottom: -40px;
+      bottom: -10px;
+      width: 150px;
     }
   }
 }
