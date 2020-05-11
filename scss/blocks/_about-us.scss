@@ -2,6 +2,10 @@
   display: flex;
   position: relative;
 
+  @media (max-width: 924px) {
+    flex-direction: column;
+  }
+
   &__col-1 {
     flex-basis: 50%;
     padding: 180px 10px 192px 100px;
@@ -9,6 +13,11 @@
 
     @media (max-width: 1550px) {
       padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media (max-width: 1156px) {
+      padding: 100px 50px;
     }
   }
 
@@ -31,11 +40,19 @@
 
   &__contacts {
     display: flex;
+
+    @media (max-width: 1142px) {
+      flex-direction: column;
+    }
   }
 
   &__telegram {
     display: flex;
     align-items: center;
+
+    @media (max-width: 1142px) {
+      margin-bottom: 13px;
+    }
   }
 
   &__img {}
@@ -45,6 +62,10 @@
     height: 1px;
     background-color: #303030;
     margin: 0 19px 0 16px;
+
+    @media (max-width: 1411px) {
+      width: 30px;
+    }
   }
 
   &__phone {
@@ -74,6 +95,10 @@
 
   &__text {
     margin-right: 92px;
+
+    @media (max-width: 1246px) {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -97,6 +122,10 @@
     right: 101px;
     bottom: 110px;
   }
+
+  @media (max-width: 924px) {
+    height: 500px;
+  }
 }
 
 .about-us-3d {
@@ -106,6 +135,10 @@
   height: 50%;
   position: relative;
   background: url(../img/about-us/video-bg-2.jpg) no-repeat center / cover;
+
+  @media (max-width: 924px) {
+    height: 500px;
+  }
 
   &__title {
     position: absolute;

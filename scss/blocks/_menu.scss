@@ -12,14 +12,27 @@
   height: 100vh;
   transition: all .5s;
 
+  @media (max-width: 924px) {
+    opacity: 0.9;
+  }
+
   &_active {
     transform: scale(1);
+  }
+
+  &__logo {
+    display: none;
   }
 
   &_light {
     @include os-light;
     color: #fff;
     font-size: 22px;
+
+    @media (max-width: 924px) {
+      margin-top: 3px;
+      @include os-exlight;
+    }
   }
 
   &__col_1 {
@@ -33,6 +46,10 @@
     color: #191919;
     width: 100px;
     padding-bottom: 50px;
+
+    @media (max-width: 924px) {
+      display: none;
+    }
   }
 
   &__col_2 {
@@ -42,6 +59,10 @@
   &__nav {
     transform: rotate(-90deg);
     margin-top: 120px;
+
+    @media (max-width: 924px) {
+      display: none;
+    }
   }
 
   &__item {
@@ -63,6 +84,10 @@
     @media (max-height: 834px) {
       margin-top: 300px;
     }
+
+    @media (max-width: 924px) {
+      display: none;
+    }
   }
 
   &__list {
@@ -82,6 +107,10 @@
 
   &__contacts {
     margin-left: 30px;
+
+    @media (max-width: 924px) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -95,10 +124,52 @@
     letter-spacing: 1.5px;
     @include os-bold;
     margin-bottom: 70px;
+
+    @media (max-width: 924px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-bottom: 82px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+    }
   }
 
   &__phone {
 
     &_link {}
+
+    &-number {
+      @media (max-width: 924px) {
+        &::before {
+          width: 48px;
+          height: 76px;
+          background: url(../img/menu/phone.png);
+          top: -63px;
+        }
+      }
+    }
+  }
+
+  &__address {
+    @media (max-width: 924px) {
+      &::before {
+        width: 57px;
+        height: 75px;
+        background: url(../img/menu/address.png);
+        top: -50px;
+      }
+    }
   }
 }
