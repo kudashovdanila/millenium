@@ -1,5 +1,5 @@
 .popup-wrap {
-  display: none;
+  // display: none;
   z-index: 20;
 }
 
@@ -21,8 +21,17 @@
   padding: 30px 50px 50px;
   max-width: 600px;
 
+  @media (max-width: 600px) {
+    max-width: 320px;
+    padding: 20px 20px 64px;
+  }
+
   &__close {
     cursor: pointer;
+
+    @media (max-width: 600px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__top {
@@ -30,6 +39,11 @@
     align-items: center;
     padding-bottom: 22px;
     border-bottom: 1px solid #363636;
+
+    @media (max-width: 600px) {
+      flex-direction: column-reverse;
+      padding-bottom: 13px;
+    }
   }
 
   &__title {
@@ -40,6 +54,11 @@
     text-transform: uppercase;
     margin-right: 38px;
     z-index: 10;
+
+    @media (max-width: 600px) {
+      font-size: 35px;
+      margin-right: 0;
+    }
   }
 
   &__line {
@@ -47,6 +66,10 @@
     height: 1px;
     background-color: #363636;
     margin-right: 23px;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
   &__text {
@@ -56,6 +79,11 @@
     letter-spacing: 1.5px;
     margin: 15px auto 17px;
     text-align: center;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+      margin: 15px auto 30px;
+    }
   }
 
   &__form {
@@ -75,6 +103,10 @@
     width: 100%;
     margin-bottom: 10px;
     outline: none;
+
+    @media (max-width: 600px) {
+      padding: 23px 20px;
+    }
 
     &::placeholder {
       color: #363636;
@@ -99,7 +131,13 @@
   }
 
   &__checkbox {
+    display: flex;
+    justify-content: center;
     margin-top: 17px;
+
+    @media (max-width: 600px) {
+      align-items: center;
+    }
   }
 
   &__check {
@@ -117,17 +155,26 @@
       border: solid #fff;
       border-width: 0 2px 2px 0;
       transform: rotate(45deg);
+
+      @media (max-width: 600px) {
+        left: 27px;
+        top: 0;
+      }
     }
   }
 
   &__checkbox-text {
-    display: flex;
-    align-items: center;
     position: relative;
     cursor: pointer;
     color: #ffffff;
     @include av-reg;
     font-size: 16px;
+
+    @media (max-width: 600px) {
+      margin: 0 auto;
+      text-align: right;
+      margin-right: 50px;
+    }
 
     &::before {
       content: '';
@@ -139,6 +186,10 @@
       position: relative;
       cursor: pointer;
       margin-right: 10px;
+
+      @media (max-width: 600px) {
+        transform: translateY(5px);
+      }
     }
   }
 
@@ -146,5 +197,10 @@
     color: #fff;
     margin-left: 5px;
     text-decoration: underline;
+
+    @media (max-width: 600px) {
+      text-align: right;
+      margin-left: 0;
+    }
   }
 }

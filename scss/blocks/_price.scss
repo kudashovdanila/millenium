@@ -26,6 +26,10 @@
     @media (max-width: 924px) {
       border-left: none;
     }
+
+    @media (max-width: 600px) {
+      padding: 50px 26px 50px 20px;
+    }
   }
 
   &__title {
@@ -60,6 +64,10 @@
     &-img {
       margin-left: 10px;
       padding-top: 1px;
+
+      @media (max-width: 600px) {
+        padding-top: 5px;
+      }
     }
   }
 
@@ -79,5 +87,9 @@
     font-size: 30px;
     font-style: italic;
     border-bottom: 1px solid #363636;
+
+    @media (max-width: 600px) {
+      font-size: 24px;
+    }
   }
 }
