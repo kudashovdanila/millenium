@@ -148,7 +148,7 @@
       content: '';
       display: block;
       position: absolute;
-      bottom: 2px;
+      bottom: 4px;
       left: 6px;
       width: 11px;
       height: 19px;
@@ -158,7 +158,7 @@
 
       @media (max-width: 600px) {
         left: 27px;
-        top: 0;
+        top: 2px;
       }
     }
   }
