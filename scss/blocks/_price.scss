@@ -11,6 +11,10 @@
     background: url(../img/price/price.jpg) no-repeat center / cover;
     flex-basis: 50%;
     background-color: #000;
+
+    @media (max-width: 600px) {
+      min-height: 300px;
+    }
   }
 
   &__content {

@@ -16,6 +16,10 @@
     opacity: 0.9;
   }
 
+  @media (max-height: 701px) {
+    overflow: scroll;
+  }
+
   &_active {
     transform: scale(1);
   }
@@ -115,6 +119,10 @@
 }
 
 .navbar-menu-contacts {
+
+  @media (max-height: 701px) {
+    padding-bottom: 40px;
+  }
 
   &__item {
     color: #ffffff;
