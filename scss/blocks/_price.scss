@@ -12,8 +12,25 @@
     flex-basis: 50%;
     background-color: #000;
 
+    @media (max-width: 1366px) {
+      background-size: contain;
+    }
+
+    @media (max-width: 924px) {
+      background-size: cover;
+    }
+
+    @media (max-width: 756px) {
+      background-size: contain;
+    }
+
     @media (max-width: 600px) {
-      min-height: 300px;
+      min-height: 500px;
+      background-size: cover;
+    }
+
+    @media (max-width: 510px) {
+      background-size: contain;
     }
   }
 
@@ -36,6 +53,8 @@
 
     @media (max-width: 600px) {
       padding: 50px 26px 50px 20px;
+      background-size: 100px;
+      background-position: 30px 45px;
     }
   }
 
