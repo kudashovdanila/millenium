@@ -42,6 +42,10 @@
     color: #5e5e5e;
     @include av-reg;
     font-size: 14px;
+
+    &-link {
+      color: #5e5e5e;
+    }
   }
 
   &__item {
