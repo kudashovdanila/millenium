@@ -66,17 +66,18 @@
     }
 
     &-img {
-      @media (max-width: 570px) width: 16px;
+      @media (max-width: 570px) {
+        width: 16px;
+      }
     }
   }
-}
 
-&__form-link {
-  @media (max-width: 1078px) {
-    margin: 0;
-    margin-left: 70px;
+  &__form-link {
+    @media (max-width: 1078px) {
+      margin: 0;
+      margin-left: 70px;
+    }
   }
-}
 }
 
 .footer-logo {
