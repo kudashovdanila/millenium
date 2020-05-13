@@ -8,7 +8,7 @@
   max-width: 485px;
   width: 100%;
   background-color: #000;
-  z-index: 9;
+  z-index: 12;
   height: 100vh;
   transition: all .5s;
 
@@ -21,7 +21,7 @@
   }
 
   &_active {
-    transform: scale(1);
+    transform: scaleX(1);
   }
 
   &__logo {
@@ -47,9 +47,13 @@
     font-size: 72px;
     @include os-bold;
     text-transform: uppercase;
-    color: #191919;
+    color: #1d1d1d;
     width: 100px;
     padding-bottom: 50px;
+
+    @media (max-width: 1367px) {
+      font-size: 60px;
+    }
 
     @media (max-width: 924px) {
       display: none;
@@ -63,6 +67,7 @@
   &__nav {
     transform: rotate(-90deg);
     margin-top: 120px;
+    font-style: italic;
 
     @media (max-width: 924px) {
       display: none;
@@ -78,15 +83,11 @@
   }
 
   &__contact {
-    transform: rotate(-90deg);
-    margin-top: 600px;
+    transform: rotate(-90deg) translateX(-100px);
+    font-style: italic;
 
-    @media (max-height: 1029px) {
-      margin-top: 400px;
-    }
-
-    @media (max-height: 834px) {
-      margin-top: 300px;
+    @media (max-height: 1367px) {
+      margin-top: 260px;
     }
 
     @media (max-width: 924px) {
@@ -132,6 +133,7 @@
     letter-spacing: 1.5px;
     @include os-bold;
     margin-bottom: 70px;
+    position: relative;
 
     @media (max-width: 924px) {
       display: flex;
@@ -140,7 +142,6 @@
       max-width: 200px;
       margin: 0 auto;
       text-align: center;
-      position: relative;
 
       &:not(:last-child) {
         margin-bottom: 82px;
@@ -159,25 +160,27 @@
     &_link {}
 
     &-number {
-      @media (max-width: 924px) {
-        &::before {
-          width: 48px;
-          height: 76px;
-          background: url(../img/menu/phone.png);
-          top: -63px;
-        }
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 48px;
+        height: 76px;
+        background: url(../img/menu/phone.png);
+        top: -63px;
       }
     }
   }
 
   &__address {
-    @media (max-width: 924px) {
-      &::before {
-        width: 57px;
-        height: 75px;
-        background: url(../img/menu/address.png);
-        top: -50px;
-      }
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 57px;
+      height: 75px;
+      background: url(../img/menu/address.png);
+      top: -50px;
     }
   }
 }

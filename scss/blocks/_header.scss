@@ -2,7 +2,11 @@
   display: flex;
   min-height: 100vh;
   position: relative;
-  background: url(../img/header/bg.jpg) no-repeat center / cover;
+  background: url(../img/header/bg.jpg) no-repeat center top / cover;
+
+  @media (max-width: 1367px) {
+    background-position: center center;
+  }
 }
 
 .mouse {
