@@ -20,6 +20,11 @@
     @media (max-width: 1078px) {
       flex-wrap: wrap-reverse;
     }
+
+    @media (max-width: 570px) {
+      position: relative;
+      padding-top: 112px;
+    }
   }
 
   &__policy {
@@ -59,19 +64,31 @@
       align-items: center;
 
     }
-  }
 
-  &__form-link {
-    @media (max-width: 1078px) {
-      margin: 0;
-      margin-left: 70px;
+    &-img {
+      @media (max-width: 570px) width: 16px;
     }
   }
+}
+
+&__form-link {
+  @media (max-width: 1078px) {
+    margin: 0;
+    margin-left: 70px;
+  }
+}
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
+
+  @media (max-width: 570px) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   &__img {}
 
