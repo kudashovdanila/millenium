@@ -46,6 +46,7 @@
     padding: 132px 50px 180px 50px;
     border-left: 1px solid #363636;
     background: url(../img/price/text-bg.png) no-repeat;
+    // background: url(../img/about-us/about-us-text.png) no-repeat;
     background-position: 57px 77px;
 
     @media (max-width: 1367px) {
@@ -59,8 +60,8 @@
 
     @media (max-width: 600px) {
       padding: 50px 26px 50px 20px;
-      background-size: 100px;
-      background-position: 30px 45px;
+      background-position: 25px 30px;
+      background-size: 120px;
     }
   }
 
