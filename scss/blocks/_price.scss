@@ -8,21 +8,21 @@
 
   &__img {
     min-height: 748px;
-    background: url(../img/price/price.jpg) no-repeat left center / cover;
+    background: url(../img/price/price.jpg) no-repeat left top / cover;
     flex-basis: 50%;
     background-color: #000;
+    background-size: contain;
 
     @media (max-width: 1366px) {
-      background-size: contain;
+      background-size: 100%;
+      min-height: 600px;
     }
 
     @media (max-width: 924px) {
       background-size: cover;
     }
 
-    @media (max-width: 756px) {
-      background-size: contain;
-    }
+    @media (max-width: 756px) {}
 
     @media (max-width: 600px) {
       min-height: 500px;
