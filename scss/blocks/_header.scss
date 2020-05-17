@@ -11,6 +11,21 @@
   @media (max-width: 700px) {
     background-position: -203px center;
   }
+
+  &__millennium-img {
+    position: absolute;
+    bottom: 44px;
+    left: 44px;
+    width: 70%;
+
+    @media (max-width: 1366px) {
+      width: 73%;
+    }
+
+    @media (max-width: 924px) {
+      display: none;
+    }
+  }
 }
 
 .mouse {
